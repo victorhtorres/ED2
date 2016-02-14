@@ -1,15 +1,16 @@
 
-public class Palindromo {
+public class PalindromoRecursivo {
 
-  public static boolean esPalindromo(String cadena) {
-    if (cadena.equals(" ") || cadena.length() < 2) {
+  public static boolean esPalindromo(String s) {
+    if (s.charAt(0) == s.charAt(0)-32 || s.charAt(0) == ' ' || s.length() == 0) {
+      return false;
+    }
+    if (s.length() == 1) {
       return true;
     }
-    char compare1 = cadena.charAt(0);
-    char compare2 = cadena.charAt(cadena.length()-1);
-    if (compare1 == (compare2)) {
-      return esPalindromo(cadena.substring(1, cadena.length() - 2));
-
+    if (s.charAt(0) == s.charAt(s.length() - 1)) 
+    {
+      return esPalindromo(s.substring(1, s.length() - 1));
     } else {
       return false;
     }
