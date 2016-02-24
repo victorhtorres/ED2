@@ -10,17 +10,23 @@ public class Fibonacci {
     
   }
   
-  //cola [pendiente por terminar....]
+  //cola
   
-  public static int fiboCola(int n) {
-    return fiboCola(n, 1);
-  }
-  
-  private static int fiboCola(int n, int r) {
-    if (n == 0 || n == 1) {     
-      return r;
-  } else {
-    return fiboCola(n-1, (n-1) + (n-2));
-  }
-  
+
+public class Fibo {
+    
+    public static int fibonacci(int n) {
+        int r = 1, k = 1;
+        return fibonacci(n, r , k);
+    }
+
+    private static int fibonacci(int n, int r, int k ) {
+        if (n == 0 || n == 1) {
+            return r;
+        } else {
+            return fibonacci(n-1, r + k, r);
+        }
+    }
+    
 }
+
