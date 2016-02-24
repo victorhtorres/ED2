@@ -5,15 +5,11 @@ import java.util.ArrayList;
 
 public class RevertirLista {
   
-  public static String revertirLista(ArrayList miLista) {
-    
+  public static String revertir(ArrayList miLista) {
     if (miLista.isEmpty()) {
       return "";
     } else {
-      String temp;
-      temp = (String) miLista.get(miLista.size()-1);
-      miLista.remove(miLista.size()-1);
-      return temp + " " + revertirLista(miLista);
+      return miLista.remove(miLista.size()-1) + " " + revertir(miLista);
     }
     
   }
