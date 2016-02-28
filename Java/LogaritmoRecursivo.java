@@ -1,24 +1,24 @@
 
 // Método cola
 
+
 public class Logaritmo {
   
   public static double log(double x, double xsub, int n) {
     
-    int cont = 1;
     double a = xsub, r = 0;
-    return log(x, a, n, cont, r);
+    return log(x, a, n, r);
     
   }
 
-  private static double log(double x, double a, int n, int cont, double r) {
+  private static double log(double x, double a, int n, double r) {
     
-    if( cont == n ){
+    if( n == 0 ){
       return Math.log10(a) + r;
     } else {
-      return log( x, a, n, cont+1, r + (Math.pow(-1, cont+1)*(Math.pow(x-a, cont))) / cont*Math.pow(a, Math.pow(a, cont)) );
+      return log( x, a, n-1, r + (Math.pow(-1, n)*(Math.pow(x-a, n))) / n*Math.pow(a, Math.pow(a, n)) );
     }
     
   }
   
-}
+} // fin class
