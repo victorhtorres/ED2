@@ -1,3 +1,12 @@
+/*
+* Realizar recursición de pila y cola para la función de exponencial de taylor: 
+* https://upload.wikimedia.org/math/8/0/c/80cb4629da06fbbfa7e2e13e8d9ea85d.png
+* Caso base: Cuando n == 0.
+* Caso general: El llamado recursivo del método con una operación pendiente que sería la formula de exponencial.
+*/
+
+// Por pila
+
 public class Exponencial {
   public static double ex(double x, double n){
     if(n == 0){
