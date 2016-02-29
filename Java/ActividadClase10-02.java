@@ -14,19 +14,20 @@ public class Utilitaria {
   
 // Recursivo de cola para calcular potencia
   
-  public static double calcularPotenciaCola (double a, int b) {
+  public static double calcularPotenciaCola(double a, int b) {
     double r = 1;
-    return calcularPotenciaColaExtend (a, b, r);
+    return calcularPotenciaCola(a, b, r);
   }
 
-  private static double calcularPotenciaColaExtend(double a, int b, double r) {
+  private static double calcularPotenciaCola(double a, int b, double r) {
     if ( b == 0) {
       return r;
     } else {
-      return calcularPotenciaColaExtend (a, b-1, r * 2);
+      return calcularPotenciaCola(a, b-1, r * 2);
     }
   }
 
+// Calcular multiplicación recursiva pila
  
   public static int calcularMulti (int a, int b) {
     if (b == 0) {
@@ -36,18 +37,30 @@ public class Utilitaria {
     }
   }
  
- public static int calcularMultiCola (int a, int b) {
+ // Calcular multiplicación recursiva cola
+ 
+ public static int calcularMultiCola(int a, int b) {
    int r = 0;
-   return calcularMultiColaExtend (a, b, r);
+   return calcularMultiCola(a, b, r);
  } 
 
-  private static int calcularMultiColaExtend(int a, int b, int r) {
+  private static int calcularMultiCola(int a, int b, int r) {
     if (b == 0) {
       return r;
     } else {
-      return calcularMultiColaExtend (a, b-1, r + a);
+      return calcularMultiCola(a, b-1, r + a);
     }
   }
- 
+  
+  // Fusionar los métodos de potencia y multiplicación
+  
+      public static int fusion(int a, int b) {
+        
+        if ( b == 0 ) {
+            return 1;
+        } else {
+            return  calcularMultiCola(calcularPotenciaCola(a, b-1), a);
+        }
+    }
   
 } // fin class
