@@ -1,4 +1,10 @@
 
+/*
+* OJO: ESTA IMPLEMENTACIÓN ESTÁ PENDIENTE POR VALIDAR....
+*
+*/
+
+
 // Método cola
 
 
