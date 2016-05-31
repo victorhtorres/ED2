@@ -1,2 +1,3 @@
-# snippets
-Fragmentos de códigos en distintos lenguajes de programación
+# Estructura de datos 2
+
+Ejercicios de la materia ED-2.
