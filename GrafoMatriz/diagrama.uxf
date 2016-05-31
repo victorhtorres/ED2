@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>330</y>
+      <w>780</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>*Grafo*
+--
+-m[][]: int
+-nVertices: int
+--
++Grafo(int nVertices): ctor
++getnVertices(): int
++adyacencia(int vIni, int vFin): void
++encontrarCamino(int vIni, int vFin): LinkedList&lt;Integer&gt;
+-encontrarCamino(int vIni, int vFin, LinkedList&lt;Integer&gt; camino, LinkedList&lt;Integer&gt; nodosVisitados): LinkedList&lt;Integer&gt;
++toString(): String
+
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>70</y>
+      <w>260</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>*Aplicacion*
+--
+ 
+--
+_+main(String[] args): void_
+_-leerArchivoXml(String nomArch): Grafo_
+
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>150</y>
+      <w>70</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+m2=1
+fg=blue
+&lt;&lt;Usa&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>30</y>
+      <w>870</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>*com.oagsoft.grafo.app*
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>240</y>
+      <w>870</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>*com.oagsoft.grafo.data*
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

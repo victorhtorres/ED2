@@ -1,11 +1,3 @@
-# Created by https://www.gitignore.io/api/netbeans
-
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-.nb-gradle/
-/Java/ManejoArbolesBinarios/nbproject/private/
+/EjemploHashMap/nbproject/private/
+/EjemploHashMap/build/
+/GrafoLista/target/

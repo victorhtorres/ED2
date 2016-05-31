@@ -1,3 +1,3 @@
-# Estructura de datos 2
+# Snippets #
 
-Ejercicios de la materia ED-2.
+Partes de código reutilizables.
