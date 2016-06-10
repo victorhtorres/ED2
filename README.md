@@ -1,3 +1,3 @@
-# Snippets #
+# Estructura de datos 2 #
 
-Partes de código reutilizables.
+Todos los ejercicios y proyecto final del curso de ED2.
